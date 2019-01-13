@@ -144,10 +144,4 @@ def get_BK_ham(distance, basis="sto-3g", multiplicity=1, charge=1):
 if __name__ == "__main__":
 
     vqe = VQE(n_qubit=4, n_point=10)
-    #print(vqe.get_gradient(get_BK_ham(0.714)))
     print(vqe.get_opt_energy())
-    #theta_list ni update_list woiretaitokigaaru 
-    #sonotokinotameni ryouhoutaioudekiruyatunisinakuteha
-
-
-
