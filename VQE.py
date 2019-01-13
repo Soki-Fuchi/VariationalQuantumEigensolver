@@ -5,7 +5,6 @@ from cirq.google import XmonSimulator
 from openfermion.hamiltonians import MolecularData
 from openfermionpyscf import run_pyscf
 from openfermion.transforms import get_fermion_operator, jordan_wigner, bravyi_kitaev
-from openfermion.utils import eigenspectrum, expectation
 from openfermion.transforms import get_sparse_operator
 from openfermion.ops import FermionOperator
 import numpy as np
