@@ -133,7 +133,7 @@ def get_BK_ham(distance, basis="sto-3g", multiplicity=1, charge=1):
     geometry = [["He",[0,0,0]],["H", [0,0,distance]]]
     description = str(distance)
     molecule = MolecularData(geometry, basis, multiplicity, charge, description)
-    molecule = run_pyscf(molecule,run_scf=1,run_fci=1)
+    molecule = run_pyscf(molecule,run_fci=1)
     bk_hamiltonian = get_sparse_operator(bravyi_kitaev(get_fermion_operator(molecule.get_molecular_hamiltonian())))
     return bk_hamiltonian
 
